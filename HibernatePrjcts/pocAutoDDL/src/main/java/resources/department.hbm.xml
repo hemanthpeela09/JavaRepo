@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.poc.Department" table="DEPT_INFO" schema="systemDB">
+		<id name="deptID" />
+		<property name="deptName" />
+		<property name="deptHOD" />
+		<property name="deptEvents" />
+		
+		<!--<property name="deptHOD" column="deptHOD"/>
+		 No need of column name if both are same, so name will be table column header name -->
+	</class>
+</hibernate-mapping>
