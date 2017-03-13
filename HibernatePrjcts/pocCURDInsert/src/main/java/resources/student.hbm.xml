@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.poc.form.Student" table="STUDENT_INFO" schema="systemDB">
+		<id name="id" column="S_ID"/>
+		<property name="name" column="S_NAME"/>
+		<property name="email" column="S_EMAIL"/>
+		<property name="address" column="S_ADDRESS"/>
+		<property name="createdDate" column="S_UPDT_TS"/>
+		<property name="course" column="S_COURSE" not-null="true"/>
+			
+	</class>
+</hibernate-mapping>
