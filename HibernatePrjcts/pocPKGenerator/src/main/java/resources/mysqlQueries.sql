@@ -1,0 +1,6 @@
+CREATE DATABASE systemDB;
+USE systemDB;
+
+  
+  SELECT * FROM BOOKING_INFO;
+ 

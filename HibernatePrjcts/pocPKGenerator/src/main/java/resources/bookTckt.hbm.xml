@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.poc.form.BookTckt" table="BOOKING_INFO" schema="systemDB">
+		<id name="id" column="B_ID">
+			<generator class="increment"/>
+		</id>
+		<property name="name" column="B_NAME"/>
+		<property name="email" column="B_EMAIL"/>
+		<property name="showTime" column="B_SHW_TM"/>
+		<property name="bookDate" column="B_UPDT_TS"/>
+		<property name="movieName" column="B_MOV_NM" not-null="true"/>
+			
+	</class>
+</hibernate-mapping>
