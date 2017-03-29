@@ -1,0 +1,9 @@
+show tables;
+
+select * from OLD_STUDENT_INFO;
+select * from NEW_STUDENT_INFO;
+
+INSERT INTO OLD_STUDENT_INFO values(2,"John","John@gmail.com","Banglore","22-11-2017","Spring");
+INSERT INTO OLD_STUDENT_INFO values(3,"Raj","raj@gmail.com","chennai","12-05-2017","JS");
+INSERT INTO OLD_STUDENT_INFO values(4,"Sri","sri@gmail.com","kolkata","8-01-2017","Pega");
+INSERT INTO OLD_STUDENT_INFO values(5,"jay","jay@gmail.com","vizag","10-09-2017","AWS");
