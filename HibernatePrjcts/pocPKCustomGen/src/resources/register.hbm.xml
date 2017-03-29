@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.poc.custom.form.UserForm" table="HDFC_USR_INFO" schema="bankingDB">
+		<id name="acctno" column="USR_ACCT_NO">
+			<generator class="com.poc.custom.service.BankAcctGenerator"/>
+		</id>
+		<property name="name" column="USR_NM"/>
+		<property name="email" column="USR_EMAIL"/>
+		<property name="gender" column="USR_GENDER"/>
+		<property name="address" column="USR_ADDRESS"/>
+		<property name="username" column="USR_USRNAME" not-null="true"/>
+		<property name="password" column="USR_PWD" not-null="true"/>
+		
+	</class>
+</hibernate-mapping>
