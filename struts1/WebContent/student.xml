@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<training>
+	<name>T.I.M.E.</name>
+	<student id="1">
+		<name>Hemanth</name>
+		<age>23</age>
+		<course>Java</course>
+	</student>
+	<student id="2">
+		<name>Pavan</name>
+		<age>23</age>
+		<course>Struts</course>
+	</student>
+	<student id="3">
+		<name>Chaitu</name>
+		<age>23</age>
+		<course>J2EE</course>
+	</student>
+	
+</training>
