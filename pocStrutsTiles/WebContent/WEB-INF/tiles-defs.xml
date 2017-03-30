@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "tiles-config_1_1.dtd">
+
+<!-- Definitions for Tiles -->
+
+<tiles-definitions>
+
+
+	<definition name="welcome.home" path="/pages/welcome.jsp">
+		<!--put name="title" value="${title}" / -->
+		<put name="header" value="/pages/header.jsp" />
+		<put name="menu" value="/pages/menu.jsp" />
+		<put name="body" value="/pages/body.jsp" />
+		<put name="footer" value="/pages/footer.jsp" />
+
+	</definition>
+
+	<definition name="contactus" extends="welcome.home">
+		<put name="body" value="/pages/contactus.jsp" />
+
+	</definition>
+
+</tiles-definitions>
