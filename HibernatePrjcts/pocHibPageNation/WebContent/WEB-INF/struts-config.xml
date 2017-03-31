@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+	   <form-bean name="UserForm" type="com.poc.form.UserForm"/>
+	   <form-bean name="UserResult" type="com.poc.form.UserResult"/>
+	</form-beans>
+
+	<action-mappings>
+	   	
+	   <action path="/getResult" type="com.poc.action.GetResult" name="UserResult">
+			<forward name="success" path="/ResultPage.jsp"/>
+	   </action>
+	   
+	</action-mappings>
+
+</struts-config>
