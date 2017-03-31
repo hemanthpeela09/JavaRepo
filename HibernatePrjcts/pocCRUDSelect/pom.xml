@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.poc</groupId>
-  <artifactId>pocCURDInsert</artifactId>
+  <artifactId>pocCRUDSelect</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>pocCURDInsert</name>
+  <name>pocCRUDSelect</name>
   <url>http://maven.apache.org</url>
 
   <properties>
