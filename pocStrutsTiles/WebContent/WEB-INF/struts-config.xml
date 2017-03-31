@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+
+	<action-mappings>
+		<action path="/goto" name="demo"
+			type="com.cts.pocstrutstiles.action.tilesAction">
+			<forward name="home" path="welcome.home" /><!--path is tiles views 
+				which has multiple pages -->
+			<forward name="contact" path="contactus" />
+		</action>
+	</action-mappings>
+
+	<!-- <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/> -->
+
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="moduleAware" value="true" />
+	</plug-in>
+</struts-config>          
