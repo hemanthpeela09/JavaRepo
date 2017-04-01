@@ -2,3 +2,5 @@
 /catalina.properties
 /context.xml
 /tomcat-users.xml
+/server.xml
+/web.xml
