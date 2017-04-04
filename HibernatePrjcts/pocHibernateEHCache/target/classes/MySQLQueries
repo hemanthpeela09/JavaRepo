@@ -1,0 +1,17 @@
+Show tables;
+
+select * from student;
+select * from student_detail;
+
+insert into student values (1,'P','Hemanth',100);
+insert into student values (2,'P','Raj',200);
+insert into student values (3,'P','Chaity',300);
+insert into student values (4,'M','Krish',400);
+insert into student values (5,'B','Bojjo',500);
+
+
+insert into student_detail values (100, 'Vizag', 25, '2000-10-10', 999999999);
+insert into student_detail values (200, 'Hyd', 26, '2001-11-11', 999999999);
+insert into student_detail values (300, 'Kol', 24, '2002-09-09', 999999999);
+insert into student_detail values (400, 'Banglre', 27, '2003-08-08', 999999999);
+insert into student_detail values (500, 'US', 25, '2000-07-07', 999999999);
