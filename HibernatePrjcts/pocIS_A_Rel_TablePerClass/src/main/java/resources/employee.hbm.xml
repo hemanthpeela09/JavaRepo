@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.poc.form.Employee" table="EMPLOYEE_INFO" schema="systemDB">
+		<id name="id" column="EMP_ID"/>
+		<discriminator column="EMP_TYPE"/>
+		<property name="name" column="EMP_NAME"/>
+		<property name="email" column="EMP_EMAIL"/>
+		<property name="salary" column="EMP_SAL"/>
+
+		<subclass name="com.poc.form.SEmployee" discriminator-value="S_EMP">
+			<property name="tool"/>
+		</subclass>
+		
+		<subclass name="com.poc.form.HEmployee" discriminator-value="H_EMP">
+			<property name="wrkngHrs" column = "EMP_HRS"/>
+		</subclass>			
+		
+		<subclass name="com.poc.form.Admin" discriminator-value="ADMIN">
+			<property name="branchName" column = "EMP_BRCH_NM"/>
+		</subclass>						
+	</class>
+</hibernate-mapping>
