@@ -1,0 +1,27 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.poc.form.Employee" table="EMPLOYEE_INFO" schema="systemDB">
+		<id name="id" column="EMP_ID"/>
+		<property name="name" column="EMP_NAME"/>
+		<property name="email" column="EMP_EMAIL"/>
+		<property name="salary" column="EMP_SAL"/>
+
+		<joined-subclass name="com.poc.form.SEmployee">
+			<key column="id"/>
+			<property name="tool" column = "EMP_TOOL"/>
+		</joined-subclass>
+
+		<joined-subclass name="com.poc.form.HEmployee">
+			<key column="id"/>
+			<property name="wrkngHrs" column = "EMP_HRS"/>
+		</joined-subclass>
+		
+		<joined-subclass name="com.poc.form.Admin">
+			<key column="id"/>
+			<property name="branchName" column = "EMP_BRCH_NM"/>
+		</joined-subclass>
+		
+	</class>
+</hibernate-mapping>
