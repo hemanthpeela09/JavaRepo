@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.poc.form.Actor" table="ACTOR_INFO" schema="systemDB">
+		<id name="aid" column="A_ID"/>
+		<property name="name" column="EMP_NAME"/>
+		
+		<set name="movies" table="MOVIES_INFO"
+				inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="A_ID" />
+            </key>
+            <one-to-many class="com.poc.form.Movies" />
+        </set>
+        
+	</class>
+</hibernate-mapping>
