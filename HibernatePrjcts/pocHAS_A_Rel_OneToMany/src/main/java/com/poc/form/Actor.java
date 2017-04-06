@@ -7,7 +7,7 @@ import java.util.Set;
 public class Actor implements Serializable{
 	private int aid;
 	private String name;
-	private Set<Movies> movies = new HashSet<Movies>(0);
+	private Set<Movies> movies;
 	
 	public String getName() {
 		return name;
