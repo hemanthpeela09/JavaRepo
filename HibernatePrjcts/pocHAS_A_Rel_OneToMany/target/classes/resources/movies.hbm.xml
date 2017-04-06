@@ -2,13 +2,13 @@
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.poc.form.Movies" table="MOVIES_INFO" schema="systemDB">
-		<id name="mid" column="M_ID"/>
-		<property name="name" column="M_NAME"/>
+	<class name="com.poc.form.Movies" table="movies" schema="systemDB">
+		<id name="mid" />
+		<property name="name" />
 		
-		<many-to-one name="actor" class="com.poc.form.Actor" fetch="select">
+<!-- 		<many-to-one name="actor" class="com.poc.form.Actor">
             <column name="A_ID"/>
         </many-to-one>
         
-	</class>
+ -->	</class>
 </hibernate-mapping>
