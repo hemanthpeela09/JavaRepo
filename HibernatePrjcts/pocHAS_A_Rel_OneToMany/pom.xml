@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.poc</groupId>
-  <artifactId>pocIS_A_Rel_TablePerClass</artifactId>
+  <artifactId>pocHAS_A_Rel_OneToMany</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>pocIS_A_Rel_TablePerClass</name>
+  <name>pocHAS_A_Rel_OneToMany</name>
   <url>http://maven.apache.org</url>
 
   <properties>
