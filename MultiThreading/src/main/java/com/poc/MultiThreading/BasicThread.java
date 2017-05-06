@@ -19,7 +19,8 @@ public class BasicThread extends Thread {
 		  System.out.println("Start of Main: ");
 
 		  for (int i=0; i<10; i++){
-		   Thread t = new BasicThread();
+		   //Thread t = new BasicThread();
+		   BasicThread t = new BasicThread();
 		   t.start();
 		   
 		   try {

@@ -22,8 +22,14 @@ public class RunnableThread implements Runnable {
 		  System.out.println("Start of Main: ");
 
 		  for (int i=0; i<10; i++){
-		   Thread t = new Thread(new RunnableThread());
-		   t.start();
+			  //First way of initialization
+			  //Thread t = new Thread(new RunnableThread());
+			  //t.start();
+			  
+			  //Second way of initialization
+			  RunnableThread t = new RunnableThread();
+			  new Thread(t).start();
+			  
 		   
 		   try {
 			   Thread.sleep(1000);
