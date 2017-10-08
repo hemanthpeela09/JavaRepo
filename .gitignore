@@ -1,2 +1,58 @@
 /.DS_Store
 /.metadata/
+/.recommenders/
+EJBTutorialExample.zip_expanded/.project
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/build.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/dist/BasicOperationsEJBClient.jar
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/nbproject/build-impl.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/nbproject/genfiles.properties
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/nbproject/project.properties
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/nbproject/project.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/nbproject/private/private.properties
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/nbproject/private/private.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBClient/src/com/javacodegeeks/example/ejb/OperationsSessionBeanRemote.java
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/build.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/build/classes/.netbeans_automatic_build
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/build/classes/.netbeans_update_resources
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/build/classes/BasicOperationsEJBClient.jar
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/build/classes/com/javacodegeeks/example/ejb/OperationsSessionBean.class
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/build/classes/META-INF/MANIFEST.MF
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/dist/BasicOperationsEJBModule.jar
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/nbproject/ant-deploy.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/nbproject/build-impl.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/nbproject/genfiles.properties
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/nbproject/project.properties
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/nbproject/project.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/nbproject/private/private.properties
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/nbproject/private/private.xml
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/src/conf/MANIFEST.MF
+EJBTutorialExample.zip_expanded/BasicOperationsEJBModule/src/java/com/javacodegeeks/example/ejb/OperationsSessionBean.java
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build.xml
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/form.jsp
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/index.html
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/Result.jsp
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/META-INF/MANIFEST.MF
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/WEB-INF/glassfish-web.xml
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/WEB-INF/classes/.netbeans_automatic_build
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/WEB-INF/classes/.netbeans_update_resources
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/WEB-INF/lib/BasicOperationsEJBClient.jar
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/build/web/WEB-INF/lib/BasicOperationsEJBModule.jar
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/dist/BasicOperationsWebClient.war
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/nbproject/ant-deploy.xml
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/nbproject/build-impl.xml
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/nbproject/genfiles.properties
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/nbproject/project.properties
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/nbproject/project.xml
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/nbproject/private/private.properties
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/src/conf/MANIFEST.MF
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/web/form.jsp
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/web/index.html
+EJBTutorialExample.zip_expanded/BasicOperationsWebClient/web/Result.jsp
+Servers/.project
+Servers/.settings/org.eclipse.wst.server.core.prefs
+Servers/Tomcat v7.0 Server at localhost-config/catalina.policy
+Servers/Tomcat v7.0 Server at localhost-config/catalina.properties
+Servers/Tomcat v7.0 Server at localhost-config/context.xml
+Servers/Tomcat v7.0 Server at localhost-config/server.xml
+Servers/Tomcat v7.0 Server at localhost-config/tomcat-users.xml
+Servers/Tomcat v7.0 Server at localhost-config/web.xml

@@ -3,6 +3,7 @@
 <html>
 <head>
 <title>Struts 2 - Login Application </title>
+<s:head/>
 </head>
  
 <body>

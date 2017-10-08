@@ -9,12 +9,21 @@
     <constant name="struts.devMode" value="false" />
     <constant name="struts.custom.i18n.resources"
         value="ApplicationResources" />
+    <constant name="struts.custom.i18n.resources" value="global" />
  
     <package name="default" extends="struts-default" namespace="/">
         <action name="login"
             class="com.cts.struts2.action.LoginAction">
-            <result name="success">Welcome.jsp</result>
+            <result name="success">Register.jsp</result>
             <result name="error">Login.jsp</result>
         </action>
+        
+         <action name="register"
+            class="com.cts.struts2.action.RegAction">
+            <result name="success">Welcome.jsp</result>
+            <result name="error">Register.jsp</result>
+            <result name="input">Register.jsp</result>
+        </action>
     </package>
+       
 </struts>
