@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="Struts2ExceptionHandling" extends="struts-default">
+		<interceptors>
+			<interceptor-stack name="appDefaultStack">
+				<interceptor-ref name="defaultStack">
+					<param name="exception.logEnabled">true</param>
+					<param name="exception.logLevel">ERROR</param>
+				</interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+	
+		<default-interceptor-ref name="appDefaultStack" />
+	
+		<global-results>
+			<result name="error">/Error.jsp</result>
+		</global-results>
+		
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception" result="error"/>
+		</global-exception-mappings>
+		
+		<action name="sum" class="net.codejava.struts.SumAction">
+			<result name="success">/Sum.jsp</result>
+		</action>
+		
+		<action name="connectDB" class="net.codejava.struts.ConnectDBAction">
+			<exception-mapping result="dbError" exception="java.sql.SQLException" />
+			<result name="success">/DBConnect.jsp</result>
+			<result name="dbError">/DBError.jsp</result>
+		</action>
+		
+	</package>
+</struts>
