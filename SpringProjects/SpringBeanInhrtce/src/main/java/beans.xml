@@ -17,4 +17,16 @@
 		<property name="ssn" value="838437284"></property>
 		<property name="name" value="Johnny B"></property>
 	</bean>
+	
+	<!-- Inheritance template -->
+	<bean id="companyTemplate" abstract="true" >
+		<property name="company" value="Google"></property>
+		<property name="address" value="Hyderabad"></property>
+	</bean>
+	
+	<bean id="staff" class="com.spring.bean.inhrtnce.bean.Staff" parent="companyTemplate">
+		<property name="id" value="1252"></property>
+		<property name="name" value="Johnny B"></property>
+	</bean>
+	
 </beans>
