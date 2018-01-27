@@ -1,5 +1,7 @@
 package com.udemy.spring.ioc;
 
+import com.udemy.spring.di.Offers;
+
 public class BikeInsruance implements Insurance {
 	private String name;
 	private int insuranceId;
@@ -32,6 +34,12 @@ public class BikeInsruance implements Insurance {
 
 	public void setValidity(int validity) {
 		this.validity = validity;
+	}
+
+	@Override
+	public Offers getCurrentOffer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

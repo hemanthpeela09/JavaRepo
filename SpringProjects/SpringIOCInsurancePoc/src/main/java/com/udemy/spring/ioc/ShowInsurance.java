@@ -19,9 +19,15 @@ public class ShowInsurance {
 		System.out.println(bstatus.showStatus());*/
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-		Insurance status = context.getBean("myInsurance", Insurance.class);
+		/*Insurance status = context.getBean("myInsurance", Insurance.class);
 		log.info(status.showStatus());
 		log.info("valid till {}", status.getValidity());
+		context.close();*/
+		
+		Insurance status1 = context.getBean("myInsurance1", Insurance.class);
+		log.info(status1.showStatus());
+		log.info(status1.getCurrentOffer().showOffers());
+		log.info("valid till {}", status1.getValidity());
 		context.close();
 	}
 

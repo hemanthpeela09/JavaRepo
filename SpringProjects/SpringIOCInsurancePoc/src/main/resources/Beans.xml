@@ -6,9 +6,19 @@
 
 
 	<!--<bean id="myInsurance" class="com.udemy.spring.ioc.CarInsruance"></bean>-->
-	<bean id="myInsurance" class="com.udemy.spring.ioc.BikeInsruance" p:validity="2020">
+	<bean id="myInsurance" class="com.udemy.spring.ioc.BikeInsruance"
+		p:validity="2020">
 		<constructor-arg value="Hemanth" type="String" name="name"></constructor-arg>
 		<constructor-arg value="60012" type="int" name="insuranceId"></constructor-arg>
 		<!-- <property name="validity" value="2020"></property> -->
 	</bean>
+	
+	<!-- Dependency Injection using XML injecting Offers bean in Car Insurance -->
+	<bean id="myInsurance1" class="com.udemy.spring.ioc.CarInsruance">
+		<!-- <constructor-arg name="offer" ref="offers"></constructor-arg> --><!-- DI using Constructor-args -->
+		<property name="currentOffer">
+			<bean id="offers" class="com.udemy.spring.di.Offers"></bean><!-- Inner bean -->
+		</property>
+	</bean>
+	<!-- <bean id="offers" class="com.udemy.spring.di.Offers"></bean> -->
 </beans>
