@@ -6,7 +6,5 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean id="myInsurance" class="com.udemy.spring.base.CarInsruance"></bean>
-	<bean id="offer" class="com.udemy.spring.di.Offers"></bean>
-	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="com.udemy.spring.base"></context:component-scan>
 </beans>

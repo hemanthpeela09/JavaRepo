@@ -13,8 +13,9 @@ public class ShowInsurance {
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 		
-		Insurance status1 = context.getBean("myInsurance ", Insurance.class);
+		Insurance status1 = context.getBean("carInsruance", Insurance.class);
 		log.info(status1.showStatus());
+		log.info(status1.getCurrentOffer().getOffer());
 		context.close();
 	}
 
