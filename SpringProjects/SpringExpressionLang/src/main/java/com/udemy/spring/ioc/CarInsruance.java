@@ -13,7 +13,7 @@ public class CarInsruance implements Insurance {
 	}
 	@Override
 	public String showStatus(){
-		return "You have Car insurance";
+		return "You have Car insurance"; 
 	}
 	public Offers getCurrentOffer() {
 		return currentOffer;
